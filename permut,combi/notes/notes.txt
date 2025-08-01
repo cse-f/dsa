@@ -1,0 +1,22 @@
+permutations = (r!)
+
+permutations with duplicates
+numbers = n;
+duplicates = 1,1,2,2,2,3,3,3,3
+d1(1) = 2 //freq of 1
+d2(2) = 3 //freq of 2
+d3(3) = 4 //freq of 3
+final formula
+
+n!/(d1!*d2!*d3!)
+
+simply total fact divide by product of all freq factorials
+
+
+
+combinations = (n!)/((n-r)!*r!)
+
+number of unique permutation of r in n numbers
+
+permutations * combinations 
+n!/(n-r)!

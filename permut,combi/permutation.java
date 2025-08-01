@@ -27,7 +27,7 @@
 // }
 
 import java.util.*;
-public class permuation {
+public class permutation {
     public static void main(String args[]){
        List<Integer> arr = new ArrayList<>(Arrays.asList(new Integer[]{1,2,3}));
        List<List<Integer>> result = new ArrayList<>();

@@ -1,0 +1,2 @@
+javac -d class Permute.java
+java -cp class Permute
