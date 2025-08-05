@@ -1,2 +1,7 @@
 javac -d class Permute.java
 java -cp class Permute
+
+
+git remote set-url origin https://cse-f@github.com/cse-f/dsa.git
+
+this will re authenticater via browser
