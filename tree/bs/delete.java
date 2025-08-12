@@ -63,3 +63,33 @@ public static Node rightMost(Node node) {
 }
 
 }
+
+//leetcode solution
+// --------------------------------------------------------------------------------------------------------------------------------------
+
+// class Solution {
+//     public TreeNode deleteNode(TreeNode root, int key) {
+//         root = delete(root,key);
+//         return root;
+//     }
+//     public TreeNode delete(TreeNode root,int key){
+//         if(root == null)return root;
+//         if(key<root.val)root.left = delete(root.left,key);
+//         else if(key>root.val)root.right = delete(root.right,key);
+//         else{
+//             if(root.left == null)return root.right;
+//             if(root.right == null)return root.left;
+
+//             TreeNode max = findMax(root.left);
+//             root.val = max.val;
+//             root.left = delete(root.left,max.val);
+//         }
+//         return root;
+//     }
+//     public TreeNode findMax(TreeNode root){
+//         while(root.right!=null){
+//             root = root.right;
+//         }
+//         return root;
+//     }
+// }
