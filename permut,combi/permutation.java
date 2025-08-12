@@ -29,22 +29,21 @@
 import java.util.*;
 public class permutation {
     public static void main(String args[]){
-       List<Integer> arr = new ArrayList<>(Arrays.asList(new Integer[]{1,2,3}));
-       List<List<Integer>> result = new ArrayList<>();
-       permute(arr,0,result);
-       System.out.println(result);
-
+        List<Integer> arr = new ArrayList<>(Arrays.asList(new Integer[]{1,2,3}));
+        List<List<Integer>> res = new ArrayList<>();
+        permute(arr,res,0);
+        System.out.println(res); 
     }
-    static void permute(List<Integer> arr, int index, List<List<Integer>> result) {
-        if (index == arr.size()) {
-            result.add(new ArrayList<>(arr));
-            return;
+    public static void permute(List<Integer> arr,List<List<Integer>> res,int index){
+        if(index == arr.size()){
+            res.add(arr);
         }
         for(int i = index;i<arr.size();i++){
             Collections.swap(arr,i,index);
-            permute(arr,index+1,result);
+            permute(arr,res,index+1);
             Collections.swap(arr,i,index);
         }
     }
+
 }
 

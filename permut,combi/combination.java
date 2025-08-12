@@ -19,6 +19,7 @@ import java.util.*;
 //   }
 // }
 
+
 import java.util.*;
 public class combination {
   public static void main(String args[]){
@@ -26,7 +27,7 @@ public class combination {
     System.out.println(combine(5,ans,0,0));
   }
   public static boolean combine(int n,List<List<Integer>> ans,int sum,int start){
-    if(sum==)return true;
+    if(sum==80)return true;
     for(int i=start;i<n;i++){
       sum+=(i+1);
       if(combine(n,ans,sum,i+1))return true;
